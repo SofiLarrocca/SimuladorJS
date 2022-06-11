@@ -1,0 +1,153 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 250vh;
+    position: absolute;
+    background-color: rgba(164, 162, 162, 0.445); 
+    top: 0;
+}
+
+.mensaje { 
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 2rem;
+    border: 5px dotted red;
+    text-align: center;
+    margin-top: 10rem;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: rgba(164, 162, 162, 0.7);
+}
+
+.mensaje span { 
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* HEADER */
+
+nav { 
+    background-color: rgba(34, 34, 30, 0.8);
+    box-shadow: 6px 10px 20px 0px rgba(26, 25, 25, 0.8);
+}
+
+.img_logo { 
+    max-width: 12rem;
+}
+
+/*SECTION PRODUCTOS */
+section { 
+    padding-top: 10rem;
+    background-image: url("img/fondo.jpg")
+}
+
+.filtro { 
+    display: block;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.container_productos { 
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.producto_descripcion { 
+    text-align: center;
+    margin: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 6px 10px 20px 0px rgba(26, 25, 25, 0.8);;
+    padding: 2rem 1rem;
+}
+
+.producto_descripcion img { 
+    max-width: 20rem;
+}
+
+.producto_descripcion p { 
+    font-size: 1.2rem;
+    margin: 0 1.5rem;
+    padding: 0.8rem 0;
+}
+
+.producto_descripcion p span { 
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+
+.producto_descripcion button { 
+    text-transform: uppercase;
+    padding: 0.8rem;
+    border-radius: 15%;
+    background-color: rgba(194, 155, 97);
+    color: #fff;
+}
+
+.container_text { 
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+}
+
+.container_text div { 
+    margin: 0 2rem ;
+}
+
+
+/* FOOTER */
+
+footer { 
+    background-color: rgb(61, 59, 59);
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer .container { 
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    margin: auto;
+}
+
+footer p { 
+    font-size: 1.2rem;
+}
+
+.footer__map--ubicacion { 
+    display: flex;
+}
+
+.footer__map--ubicacion p { 
+    margin-left: 0.5rem;
+}
+
+.footer__right .redes { 
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
