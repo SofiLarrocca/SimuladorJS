@@ -110,11 +110,11 @@ function precioProducto () {
                     console.log ("El costo de envío es de $ " + sur.costo)
                     costoEnvio = sur.costo
                     return
-                } 
-            } alert ("Ingrese provincia correcta")
-            
-        }flete ()
-
+                } else { alert ("Ingrese provincia correcta")
+                flete();
+            }
+    }
+}
 
 // Calculamos el precio final que deberá abonar
    let precioFinal = ((precioProductoSeleccionado - descuento) * (1 + iva)) +costoEnvio
